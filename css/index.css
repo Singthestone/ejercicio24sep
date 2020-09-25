@@ -1,4 +1,41 @@
-/* *********************************** */
-/* *** Estilos SOLO para index.html *** */
-/* *********************************** */
+html {
+    font-family: Helvetica, sans-serif;
+}
 
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+picture {
+    position: relative;
+    text-align: center;
+}
+
+.banner {
+    opacity: 50%;
+}
+
+.titleBreakfast {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    font-size: 2.5rem;
+    color: #6F4E37;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+button {
+    background: #6F4E37;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    align-self: center;
+}
