@@ -8,6 +8,14 @@ body {
     background: #EEE3AB;
 }
 
+header {
+    flex: 1 1 1;
+}
+
+main {
+    flex: 1 1 1;
+}
+
 picture {
     position: relative;
     text-align: center;
@@ -15,6 +23,9 @@ picture {
 
 .banner {
     opacity: 40%;
+    width: 50vw;
+    height: 100vh;
+    flex: 1 1 1;
 }
 
 .titleBreakfast {
@@ -24,6 +35,7 @@ picture {
     font-size: 3rem;
     font-weight: bolder;
     color: #6F4E37;
+    flex: 1 1 1;
 }
 
 main {
@@ -57,4 +69,8 @@ button {
     border: none;
     border-radius: 20px;
     align-self: center;
+}
+
+.bdayTitle {
+    display: block;
 }

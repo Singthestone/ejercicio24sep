@@ -33,12 +33,21 @@
     <header>
 
         <picture>
+            <!-- IMÁGENES PARA SMARTPHONE -->
+            <source srcset="
+            img/smartphone/banner.jpg 1x, 
+            img/smartphone/banner@2x.jpg 2x, 
+            img/smartphone/banner@3x.jpg 3x
+            " media="(min-width:320px) and (max-width:450px) and (orientation:portrait)" />
 
             <!-- IMÁGENES PARA IPAD-->
             <source srcset="img/tablet/banner.jpg 1x, img/tablet/banner@2x.jpg 2x" media="(min-width:768px) and (max-width: 800px) and (orientation:portrait)" />
 
-            <!-- Imagen de respaldo -->
-            <img class="banner" src="img/desktop/banner.jpg" alt="banner" />
+            <!-- DESKTOP -->
+            <source srcset="img/desktop/banner.jpg 1x, img/desktop/banner@2x.jpg 2x" media="(min-width:1000px) and (max-width:1366px)" />
+
+
+            <img class="banner" src="" alt="banner" />
         </picture>
 
         <h1 class="titleBreakfast">¿Cómo son <br> tus desayunos?</h1>
@@ -51,10 +60,10 @@
             <ul>
                 <label for="bebida">¿Café o té?</label>
                 <li>
-                    <input type="radio" name="cafe" value="cafe" checked>Café
+                    <input type="radio" name="cafe" value="cafe">Café
                 </li>
                 <li>
-                    <input type="radio" name="te" value="te" checked>Té
+                    <input type="radio" name="te" value="te">Té
                 </li>
             </ul>
 
@@ -88,12 +97,10 @@
               </ul>
               
             <!-- 4a pregunta -->
-            <ul>
-              <label for="fechaNacimiento">Fecha de nacimiento</label>
-              <li>
-                <input type="date" name="fechaNacimiento" min="01/01/1930" max="01/01/2020">
-              </li>
-            </ul>
+
+            <label for="fechaNacimiento" class="bdayTitle">Fecha de nacimiento</label>
+            <input type="date" name="fechaNacimiento" min="01/01/1930" max="01/01/2020">
+
 
             <!-- 5a pregunta -->
             <ul>
